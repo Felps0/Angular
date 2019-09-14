@@ -1,5 +1,6 @@
-export class Usuario {
+export class Evento {
     
+     evento 
         nome:string;
         tema:string;
         data:string;
