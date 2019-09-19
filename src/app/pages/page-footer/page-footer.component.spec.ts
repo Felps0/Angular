@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListeEventoComponent } from './liste-evento.component';
+import { PageFooterComponent } from './page-footer.component';
 
-describe('ListeEventoComponent', () => {
-  let component: ListeEventoComponent;
-  let fixture: ComponentFixture<ListeEventoComponent>;
+describe('PageFooterComponent', () => {
+  let component: PageFooterComponent;
+  let fixture: ComponentFixture<PageFooterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListeEventoComponent ]
+      declarations: [ PageFooterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListeEventoComponent);
+    fixture = TestBed.createComponent(PageFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

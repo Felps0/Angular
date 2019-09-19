@@ -1,0 +1,42 @@
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" class="form-control" [(ngModel)]="cep" placeholder="CEP" name="cep" required (keyup)="buscaCep()">
+    <small class="form-text text-muted"></small>
+</div>
+
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" class="form-control" [(ngModel)]="endereco.logradouro" placeholder="Endereco" name="Endereco" required>
+    <small class="form-text text-muted"></small>
+</div>
+
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" class="form-control" [(ngModel)]="endereco.complemento" placeholder="Complemento" name="Complemento">
+    <small class="form-text text-muted"></small>
+</div>
+
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" class="form-control" [(ngModel)]="endereco.numero" placeholder="Numero" name="Numero" required>
+    <small class="form-text text-muted"></small>
+</div>
+
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" class="form-control" [(ngModel)]="endereco.bairro" placeholder="Bairro" name="Bairro" required>
+    <small class="form-text text-muted"></small>
+</div>
+
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" class="form-control" [(ngModel)]="endereco.localidade" placeholder="Cidade" name="localidade" required>
+    <small class="form-text text-muted"></small>
+</div>
+
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" class="form-control" [(ngModel)]="endereco.uf" placeholder="Uf" name="Uf" required>
+    <small class="form-text text-muted"></small>
+</div>
+

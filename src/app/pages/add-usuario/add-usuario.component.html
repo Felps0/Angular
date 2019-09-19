@@ -9,7 +9,10 @@
             <label for=""></label>
             <input type="email" class="form-control" [(ngModel)]="usuario.email" placeholder="E-mail" name="email" required>
             <small class="form-text text-muted"></small>
-        </div>
+        </div> 
+
+        <app-endereco [endereco] = usuario.endereco></app-endereco>
+
         <div class="form-group">
             <label for=""></label>
             <input type="password" class="form-control" [(ngModel)]="usuario.pws" placeholder="Senha" name="pws" required minlength="6" #pws="ngModel">

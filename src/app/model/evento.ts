@@ -1,10 +1,8 @@
 export class Evento {
-    
-     evento 
-        nome:string;
-        tema:string;
-        data:string;
-        horario:string;
-        ativo: boolean = true;
-        
+    id:number;
+    nome:string;
+    tema:string;
+    data:string;
+    hora:string;
+    ativo:boolean = true;
 }

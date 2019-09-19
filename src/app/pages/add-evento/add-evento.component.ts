@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Evento } from 'src/app/model/evento';
+import { EventoService } from 'src/app/services/evento.service';
 import { Router } from '@angular/router';
-import { Evento } from '../../model/evento';
-import { EventoService } from '../../services/evento.service';
-
 
 @Component({
   selector: 'app-add-evento',
@@ -15,8 +14,8 @@ export class AddEventoComponent implements OnInit {
 
   constructor(
     protected eventoService: EventoService,
-    protected router:Router
-    ) { }
+    protected router: Router
+  ) { }
 
   ngOnInit() {
   }
@@ -30,8 +29,8 @@ export class AddEventoComponent implements OnInit {
           form.reset();
           //this.router.navigate(["/"])
           this.router.navigateByUrl('/', { skipLocationChange: true })
-            .then(() =>
-              this.router.navigate(['/addevento']));
+          .then(() =>
+          this.router.navigate(['/addevento']));
           alert("Cadastrado!");
         },
         err => {

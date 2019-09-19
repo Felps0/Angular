@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageNavComponent implements OnInit {
 
-  
-
   constructor() { }
 
   ngOnInit() {

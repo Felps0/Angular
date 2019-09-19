@@ -21,4 +21,5 @@ export class UsuarioService {
   getAll(){
     return this.http.get(this.db + "usuarios")
   }
+  
 }
